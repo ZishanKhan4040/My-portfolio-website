@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zishan Khan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="name">Zishan Khan</h1>
+            <p class="tagline">Passionate Developer | M.Tech IT Student</p>
+            <a href="#contact" class="cta-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="description" data-aos="fade-up">I am currently in my second year of Integrated M.Tech in Information Technology. I am passionate about learning new coding languages and developing projects to solve real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skill-list">
+                <div class="skill" data-aos="zoom-in">HTML</div>
+                <div class="skill" data-aos="zoom-in">CSS</div>
+                <div class="skill" data-aos="zoom-in">JavaScript</div>
+                <div class="skill" data-aos="zoom-in">PHP</div>
+                <div class="skill" data-aos="zoom-in">C++</div>
+                <div class="skill" data-aos="zoom-in">Python</div>
+                <div class="skill" data-aos="zoom-in">Java</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="filter">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('web')">Web Development</button>
+                <button onclick="filterProjects('game')">Game Development</button>
+            </div>
+            <div class="project-list" id="project-list">
+                <!-- Example Project -->
+                <div class="project web" data-aos="flip-left">
+                    <h3>Web Portfolio</h3>
+                    <p>Built using HTML, CSS, JavaScript. A showcase of my work and skills.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project game" data-aos="flip-left">
+                    <h3>Game in C++</h3>
+                    <p>Developed a simple game using C++. Focused on game logic and performance.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- More projects can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-response" class="response"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Zishan Khan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
